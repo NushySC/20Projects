@@ -75,9 +75,10 @@ html {
 	justify-content: center;
 	font-size: 0.7rem;
 }
-.showcase .seat:not(.seat.occupied):hover {
+.showcase .seat:not(.occupied):hover {
 	cursor: default;
 	transform: scale(1);
+	filter: brightness(100%);
 }
 
 .seat:not(.occupied):hover {
