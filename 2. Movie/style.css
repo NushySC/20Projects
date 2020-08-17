@@ -10,7 +10,9 @@
 	padding-inline-end: 0;
 }
 html {
-	background-color: #707070;
+	background-color: #4d4d4d;
+	color: whitesmoke;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .movie-container {
 	width: 80%;
@@ -65,7 +67,7 @@ html {
 	margin: 0.3rem 0;
 	transform: rotateX(-45deg);
 	box-shadow: 0 3px 10px white;
-	margin: 1rem 0 2rem 0;
+	margin: 0.5rem 0 2rem 0;
 }
 .showcase li {
 	list-style-type: none;
@@ -95,4 +97,12 @@ html {
 }
 .seat.occupied {
 	background-color: lightsalmon;
+}
+p {
+	margin-top: 1rem;
+	font-size: 0.9rem;
+}
+
+p span {
+	color: tomato;
 }
