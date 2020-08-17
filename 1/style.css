@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0 auto;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.container {
+	font-family: 'Raleway', sans-serif;
+	width: 60%;
+	padding: 2rem;
+	background-color: rgb(255, 230, 0);
+	min-height: 80vh;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+h2 {
+	font-size: 1.8rem;
+	line-height: 2.3rem;
+	font-family: 'Press Start 2P', cursive;
+	text-align: center;
+	background-color: white;
+	border: 5px dashed black;
+	padding: 1.5rem;
+	animation: flash 1s ease infinite normal both;
+}
+@keyframes flash {
+	0% {
+		background-color: white;
+		transform: scale(1.2);
+	}
+	50% {
+		background-color: fuchsia;
+		transform: scale(0.7);
+		transform: rotate(5deg);
+	}
+	75% {
+		background-color: greenyellow;
+		transform: scale(0.9);
+	}
+	100% {
+		transform: rotate(-5deg);
+	}
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 35%;
+}
+
+@media screen and (max-width: 768px) {
+	.form {
+		width: 70%;
+	}
+}
+.form-control {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+	margin-bottom: 0.5rem;
+}
+
+.form-control label {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	margin-bottom: 0.5rem;
+}
+
+.form-control input {
+	padding: 0.5rem;
+	border-radius: 4px;
+	border: 1px solid white;
+	box-shadow: 2px 2px 2px grey;
+	margin-bottom: 0.2rem;
+}
+
+.form-control input:focus {
+	outline: 1px dashed ghostwhite;
+}
+
+.form-control.success input {
+	border: 2px solid green;
+}
+.form-control.error input {
+	border-bottom: 3px dashed red;
+}
+.form-control small {
+	font-size: 0.6rem;
+	visibility: hidden;
+	margin-top: 0.2rem;
+}
+
+.form-control.error small {
+	font-size: 0.6rem;
+	color: red;
+	visibility: visible;
+}
+
+.form-control.success small {
+	font-size: 0.6rem;
+	color: green;
+}
+
+.form button {
+	cursor: pointer;
+	background-color: white;
+	border-radius: 1rem;
+	border: none;
+	color: black;
+	padding: 1rem 3rem;
+	font-family: 'Press Start 2P', cursive;
+	outline: 1px solid rgba(255, 0, 255, 0.171);
+	box-shadow: 2px 2px 6px;
+}
+button:hover {
+	background-color: fuchsia;
+	transition: all 1s ease;
+}
+button:active {
+	box-shadow: 1px 1px 2px;
+}
