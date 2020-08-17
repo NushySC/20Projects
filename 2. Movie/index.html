@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+	<!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Movie Seat Booking</title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<!--[if lt IE 7]>
+			<p class="browsehappy">
+				You are using an <strong>outdated</strong> browser. Please
+				<a href="#">upgrade your browser</a> to improve your experience.
+			</p>
+		<![endif]-->
+		<div class="movie-container">
+			<label for="">Pick a movie</label>
+			<select name="movies" id="movies">
+				<option value="10">Kill Bill - Vol. I ($10)</option>
+				<option value="8">Kill Bill - Vol. II ($10)</option>
+				<option value="5">Pulp Fiction ($10)</option>
+				<option value="12">Jackie Brown ($10)</option>
+				<option value="7">Once Upon a Time in Hollywood ($10)</option>
+			</select>
+			<ul class="showcase">
+				<li>
+					<div class="seat"></div>
+					<small>Empty</small>
+				</li>
+				<li>
+					<div class="seat selected"></div>
+					<small>Selected</small>
+				</li>
+				<li>
+					<div class="seat occupied"></div>
+					<small>Occupied</small>
+				</li>
+			</ul>
+			<div class="container">
+				<div class="screen"></div>
+				<div class="row">
+					<div class="seat empty"></div>
+					<div class="seat occupied"></div>
+					<div class="seat"></div>
+					<div class="seat empty"></div>
+					<div class="seat occupied"></div>
+					<div class="seat empty"></div>
+					<div class="seat empty"></div>
+					<div class="seat empty"></div>
+					<div class="seat occupied"></div>
+					<div class="seat occupied"></div>
+				</div>
+				<div class="row">
+					<div class="seat empty"></div>
+					<div class="seat occupied"></div>
+					<div class="seat occupied"></div>
+					<div class="seat occupied"></div>
+					<div class="seat empty"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat occupied"></div>
+					<div class="seat occupied"></div>
+					<div class="seat"></div>
+				</div>
+				<div class="row">
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+				</div>
+				<div class="row">
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+				</div>
+				<div class="row">
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+				</div>
+			</div>
+			<p class="text">
+				You have selected <span class="count"> 0 </span>. The total of
+				your purchase is <span class="total"> $0</span>
+			</p>
+		</div>
+
+		<script src="index.js" async defer></script>
+	</body>
+</html>
